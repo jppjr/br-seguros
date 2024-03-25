@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>regra de alerta de tempestade</name>
+  <uuid>98d09ff7-3ecc-4ee9-921d-ec8e0101c811</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[Se
+     'Previsão do tempo' é alerta de tempestade 
+então
+     atribuir à decisão o valor "Seria sensato ficar dentro de casa. Há um alerta de tempestade." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

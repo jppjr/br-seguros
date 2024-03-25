@@ -1,0 +1,48 @@
+
+package com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados;
+
+
+public class PrevisãoDoTempo
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "previsãoDoTempo"
+        property "de.generated" "true"
+{
+    public boolean alertaDeTempestade
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "alertaDeTempestade"
+                property update "true";
+    public long previsãoDeChuva
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "previsãoDeChuva"
+                property update "true";
+    public com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura temperatura
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "temperatura"
+                property update "true";
+    public PrevisãoDoTempo(boolean alertaDeTempestade, long previsãoDeChuva, com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura temperatura)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public PrevisãoDoTempo()
+                property "dataio.default" "true";
+}
+
+public class Temperatura
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "temperatura"
+        property "de.generated" "true"
+{
+    domain {static caloroso, static frio, static quente}
+    public static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura caloroso
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "caloroso";
+    public static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura frio
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "frio";
+    public static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura quente
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "quente";
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>regra de recomendação</name>
+  <uuid>4f214d30-f49d-471a-9346-18e335799688</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[se
+	Nome é definido 
+então
+	atribuir à decisão o valor `Olá { 'Nome' }! {'Recomendação meteorológica' }`;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

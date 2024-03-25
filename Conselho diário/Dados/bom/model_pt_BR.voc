@@ -1,0 +1,33 @@
+
+# Term: previsão de chuva
+@previsão\ de\ chuva#gender = FEMALE
+
+# Term: previsão do tempo
+@previsão\ do\ tempo#gender = FEMALE
+
+# Term: temperatura
+@temperatura#gender = FEMALE
+
+# com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo#concept.label = previsão do tempo
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.PrevisãoDoTempo(boolean,long,com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura)#phrase.navigation = uma nova {previsão do tempo} na qual {0, alerta de tempestade} {1, previsão de chuva} {2, temperatura}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.action[0] = {this} fica alerta de tempestade somente se {alerta de tempestade}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.action[1] = colocar à {alerta de tempestade} que {this} é alerta de tempestade
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.action[1].deprecated = true
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.navigation = {this} é alerta de tempestade
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.negative_predicate = {this} não está alerta de tempestade
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.negative_predicate_setter = {this} não fica alerta de tempestade
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.alertaDeTempestade#phrase.positive_predicate_setter = {this} fica alerta de tempestade
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.previsãoDeChuva#phrase.action = atribuir a previsão de chuva {this,PARTITIVE_ARTICLE} a {previsão de chuva}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.previsãoDeChuva#phrase.addition_setter = adicionar {previsão de chuva} à previsão de chuva {this,PARTITIVE_ARTICLE}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.previsãoDeChuva#phrase.navigation = {previsão de chuva} {this,PARTITIVE_ARTICLE}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.previsãoDeChuva#phrase.subtraction_setter = subtrair {previsão de chuva} da previsão de chuva {this,PARTITIVE_ARTICLE}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.temperatura#phrase.action = atribuir a temperatura {this,PARTITIVE_ARTICLE} a {temperatura}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.temperatura#phrase.clearer = limpar a temperatura {this,PARTITIVE_ARTICLE}
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.PrevisãoDoTempo.temperatura#phrase.navigation = {temperatura} {this,PARTITIVE_ARTICLE}
+
+# com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura#concept.label = temperatura
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura.caloroso#instance.label = caloroso
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura.frio#instance.label = frio
+com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura.quente#instance.label = quente

@@ -1,0 +1,11 @@
+{
+  "operationId" : "3e7d515e-8459-4d64-bb93-9912dfd222df",
+  "body" : {
+    "nome" : "Marta",
+    "previsãoDoTempo" : {
+      "alertaDeTempestade" : true,
+      "previsãoDeChuva" : 100,
+      "temperatura" : "frio"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="jurandir.patria_br.ibm.com.br_seguros_saude.conselho_di0x00e1rio:recomenda0x00e70x00f5esMeteorol0x00f3gicas" ruleAppVersion="LATEST-SNAPSHOT" packageName="com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.recomenda0x00e70x00f5esmeteorol0x00f3gicas" managingXom="true">
+  <name>Recomendações-meteorológicas</name>
+  <uuid>17f38b0e-ade4-4ed7-9ded-f1e9bc2dbc3c</uuid>
+  <locales>pt_BR</locales>
+  <operations operationName="operation">
+    <operation href="operation.dop#3e7d515e-8459-4d64-bb93-9912dfd222df"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
+  </versionPolicies>
+  <versionPolicies label="Use the base version numbers" recurrent="true">
+    <description><![CDATA[Uses the numbers provided in the deployment configuration. Replaces the latest version of each ruleset with this release. Used for hot fixes or development.]]></description>
+  </versionPolicies>
+  <versionPolicies label="The user can define the version numbers" ruleset="MANUAL" recurrent="true">
+    <description><![CDATA[Allows you to enter your own version numbers. Used for hot fixes or updates to an earlier release.]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>
